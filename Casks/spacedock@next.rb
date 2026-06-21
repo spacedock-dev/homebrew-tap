@@ -35,7 +35,7 @@ cask "spacedock@next" do
       "agentsview",
     ]
 
-  binary "spacedock@next"
+  binary "spacedock", target: "spacedock@next"
 
   postflight do
     system_command "/usr/bin/xattr",
