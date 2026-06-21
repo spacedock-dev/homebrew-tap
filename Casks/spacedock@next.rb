@@ -31,11 +31,15 @@ cask "spacedock@next" do
   livecheck do
     skip "Auto-generated on release."
   end
+  conflicts_with cask: [
+      "spacedock",
+    ]
+
   depends_on cask: [
       "agentsview",
     ]
 
-  binary "spacedock", target: "spacedock@next"
+  binary "spacedock"
 
   postflight do
     system_command "/usr/bin/xattr",
