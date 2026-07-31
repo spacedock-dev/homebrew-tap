@@ -1,28 +1,28 @@
 class SubspaceBeta < Formula
   desc "Native Subspace Review v1 TUI"
   homepage "https://github.com/spacedock-dev/subspace-beta"
-  version "0.10.0-beta.8"
+  version "0.10.0-beta.9"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.8/subspace_0.10.0-beta.8_darwin_arm64.tar.gz"
-      sha256 "b20e23c37ef51619425157f3906bfc20261852941ba28be0911cc4726a3e2bea"
+      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.9/subspace_0.10.0-beta.9_darwin_arm64.tar.gz"
+      sha256 "fbff078f1c9b84c32c166cd6cd3431b3ce9e05b534a4ef54d7971a582a156c14"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.8/subspace_0.10.0-beta.8_darwin_amd64.tar.gz"
-      sha256 "cee57a44f39e6c7d07957986d69a571a554b4e0a8c978b3045f2e7e358b0c145"
+      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.9/subspace_0.10.0-beta.9_darwin_amd64.tar.gz"
+      sha256 "13b73f684a22dfa49d49a94de13a83f36eae3fea54ac933f64ceb206cc157635"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.8/subspace_0.10.0-beta.8_linux_arm64.tar.gz"
-      sha256 "3f89c15eab9343f082ad820ab32a21d9802d26c6b9afce19fd39343065a45591"
+      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.9/subspace_0.10.0-beta.9_linux_arm64.tar.gz"
+      sha256 "2a3f5d2603f1b3196865f319e87454b664c518de4ffab84bd69a55ecbb1f4559"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.8/subspace_0.10.0-beta.8_linux_amd64.tar.gz"
-      sha256 "67bf7f715861f62bb7932ec870dedde6653dac27560ab8be8c5fb6e6d46d82cd"
+      url "https://github.com/spacedock-dev/subspace-beta/releases/download/v0.10.0-beta.9/subspace_0.10.0-beta.9_linux_amd64.tar.gz"
+      sha256 "a167423fc00de2f01839c54f4dc29b22b4c1d7dbf1602d9f0c3f03a3289ce57b"
     end
   end
 
@@ -32,7 +32,7 @@ class SubspaceBeta < Formula
   end
 
   test do
-    assert_equal "0.10.0-beta.8", shell_output("#{bin}/subspace-tui --version").strip
-    assert_equal "0.10.0-beta.8", shell_output("#{bin}/sr --version").strip
+    assert_equal "0.10.0-beta.9", shell_output("#{bin}/subspace-tui --version").strip
+    assert_equal "0.10.0-beta.9", shell_output("#{bin}/sr --version").strip
   end
 end
