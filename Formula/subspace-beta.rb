@@ -1,28 +1,28 @@
 class SubspaceBeta < Formula
   desc "Native Subspace Review v1 TUI"
   homepage "https://github.com/spacedock-dev/subspace"
-  version "0.12.0"
+  version "0.12.1"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.0/subspace_0.12.0_darwin_arm64.tar.gz"
-      sha256 "5751d81345b7fa8b355a5afa1088c50a0434a6faed8f0a8b134c0dced0e6adce"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.1/subspace_0.12.1_darwin_arm64.tar.gz"
+      sha256 "7807f18651871ad686e7bbe5ad77f40b111f98dddd892da59ba9b76b7bda7cd4"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.0/subspace_0.12.0_darwin_amd64.tar.gz"
-      sha256 "0bf2411df4096ffaad31d218bd9160d04fff62a7514d575d0b15bc76b04efc9c"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.1/subspace_0.12.1_darwin_amd64.tar.gz"
+      sha256 "157842f434667b7900fb93b10592edf85cc60feb80bf523b0fce071c3b8252de"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.0/subspace_0.12.0_linux_arm64.tar.gz"
-      sha256 "3ea5c2e56e40299721dc99119c81efaaeb7c3f801480644218285f7b13a94d61"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.1/subspace_0.12.1_linux_arm64.tar.gz"
+      sha256 "1f7cdf74803826dac6379bdc579856047674fe5290063ba98e20586884432bf3"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.0/subspace_0.12.0_linux_amd64.tar.gz"
-      sha256 "8c28c0aaeed458af00a0f01af94955546682640833419b7fca6010ab9771fc08"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.12.1/subspace_0.12.1_linux_amd64.tar.gz"
+      sha256 "89fd6d073454dd231844acd5dcfcf4d15176f58a1087ecc4be6568c879888b69"
     end
   end
 
@@ -32,7 +32,7 @@ class SubspaceBeta < Formula
   end
 
   test do
-    assert_equal "0.12.0", shell_output("#{bin}/subspace-tui --version").strip
-    assert_equal "0.12.0", shell_output("#{bin}/sr --version").strip
+    assert_equal "0.12.1", shell_output("#{bin}/subspace-tui --version").strip
+    assert_equal "0.12.1", shell_output("#{bin}/sr --version").strip
   end
 end
