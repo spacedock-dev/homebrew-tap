@@ -1,28 +1,28 @@
 class SubspaceBeta < Formula
   desc "Native Subspace Review v1 TUI"
   homepage "https://github.com/spacedock-dev/subspace"
-  version "0.16.0-beta.5"
+  version "0.16.0"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0-beta.5/subspace_0.16.0-beta.5_darwin_arm64.tar.gz"
-      sha256 "8ec436abc4e5f564ea6146350effbf9b8529e23a193d764b487bf7c022c5f9f8"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0/subspace_0.16.0_darwin_arm64.tar.gz"
+      sha256 "9cab85193d886d79dce0ddcc050b66e081cd0f09f8a55ec41b44784f455b3b22"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0-beta.5/subspace_0.16.0-beta.5_darwin_amd64.tar.gz"
-      sha256 "4aa1f261e280ae3dcc9e23057ddb05799b222ca232bf12198590201935485bd9"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0/subspace_0.16.0_darwin_amd64.tar.gz"
+      sha256 "94d163f52cd6320893d42707eb9f5fce5cb828bdef9d10c984183d40ed0c0441"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0-beta.5/subspace_0.16.0-beta.5_linux_arm64.tar.gz"
-      sha256 "1257b59ca422ee339d5555658c73fdc1f93d8b9550880b9233e1675de1de4a61"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0/subspace_0.16.0_linux_arm64.tar.gz"
+      sha256 "0c57dfc8fd9b1c0ae2fc682168582c20225a8e5aba7bb3137ee15ef936025474"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0-beta.5/subspace_0.16.0-beta.5_linux_amd64.tar.gz"
-      sha256 "91e97a554018aa54a6a660b6f3b86ca1c8882f36998dda0815b3366481fbf1fc"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.0/subspace_0.16.0_linux_amd64.tar.gz"
+      sha256 "73a6ba557a64ab44de948bd99b0b475a1efc9b131da066b7fd35e62037deedf4"
     end
   end
 
@@ -34,9 +34,9 @@ class SubspaceBeta < Formula
   end
 
   test do
-    assert_equal "0.16.0-beta.5", shell_output("#{bin}/subspace-tui --version").strip
-    assert_equal "0.16.0-beta.5", shell_output("#{bin}/sr --version").strip
-    assert_equal "0.16.0-beta.5", shell_output("#{bin}/subspace-relay-client --version").strip
-    assert_equal "0.16.0-beta.5", shell_output("#{bin}/rr --version").strip
+    assert_equal "0.16.0", shell_output("#{bin}/subspace-tui --version").strip
+    assert_equal "0.16.0", shell_output("#{bin}/sr --version").strip
+    assert_equal "0.16.0", shell_output("#{bin}/subspace-relay-client --version").strip
+    assert_equal "0.16.0", shell_output("#{bin}/rr --version").strip
   end
 end
