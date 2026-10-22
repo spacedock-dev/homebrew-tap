@@ -6,25 +6,25 @@ cask "spacedock@next" do
     end
   end
 
-  version "0.28.0-pre4"
+  version "0.28.0-pre5"
 
   on_macos do
     on_arm do
-      sha256 "57d2bfcae5c6ff4de5234b108f930ef3658e760aaf6a735ebed28607cb664da2"
+      sha256 "0203ed62ffca88e6246bf6e29bf16c015f418c04cb9b6958a35d4bcef2bce482"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_darwin_arm64_edge.tar.gz"
     end
     on_intel do
-      sha256 "53941102921dd2b58951f3a8aa1b91beeeacf3b346a897bf3842a6e4ba76bd70"
+      sha256 "ecc0a7cffaa147fe9123c147cf1483dc6f5eb72317c7aa90be5c203ceb6965b1"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_darwin_amd64_edge.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "bc516865ce11e3b30e675eadfa2caa36f90810242adba9ae2bba39aa4fa91cfe"
+      sha256 "41d0896620320fda184666c78c51556ff07828a68a8c97b3959572290255a3b6"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_linux_arm64_edge.tar.gz"
     end
     on_intel do
-      sha256 "2d75b496f320c427f925679267d08da2f3bb1d035e26d8f34818fb5bef3e08df"
+      sha256 "5c77e8b59f1d89bcbbe90e4fcf4d6ee4a46e5010c843f56b0e922a9d56ac4223"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_linux_amd64_edge.tar.gz"
     end
   end
@@ -42,6 +42,10 @@ cask "spacedock@next" do
 
   depends_on cask: [
       "agentsview",
+    ],
+    formula: [
+      "spacedock-dev/tap/compass",
+      "spacedock-dev/tap/subspace-beta",
     ]
 
   binary "spacedock"
