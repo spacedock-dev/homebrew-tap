@@ -1,28 +1,28 @@
 class Compass < Formula
   desc "Agnostic agent cartography and visualization tool"
   homepage "https://github.com/spacedock-dev/compass"
-  version "1.4.0"
+  version "2.0.0"
   license all_of: ["Apache-2.0", "OFL-1.1"]
 
   on_macos do
     on_arm do
-      url "https://github.com/spacedock-dev/compass/releases/download/v1.4.0/compass_1.4.0_darwin_arm64.tar.gz"
-      sha256 "7fd5df08bafbfffb3bfe6c693dac85b5cbe6b25fae9b4e96390469cd97997934"
+      url "https://github.com/spacedock-dev/compass/releases/download/v2.0.0/compass_2.0.0_darwin_arm64.tar.gz"
+      sha256 "75180629ae3cc5a34490b96c885d108295db0d53e91beb83050ffd40dd78359a"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/compass/releases/download/v1.4.0/compass_1.4.0_darwin_amd64.tar.gz"
-      sha256 "af4b6271dffa4d8c4b08461faf0b3fa23c958d91172dee16ce1be2c8d4895f91"
+      url "https://github.com/spacedock-dev/compass/releases/download/v2.0.0/compass_2.0.0_darwin_amd64.tar.gz"
+      sha256 "1b54d2ffcc6eab8cb8801c0a718614d48987ed2718cd18d73c809e0af28bc525"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/spacedock-dev/compass/releases/download/v1.4.0/compass_1.4.0_linux_arm64.tar.gz"
-      sha256 "16192d6165e62f70b2bbdf856788b2873ee2a4cbcf6b69dad32d190cbb27bb98"
+      url "https://github.com/spacedock-dev/compass/releases/download/v2.0.0/compass_2.0.0_linux_arm64.tar.gz"
+      sha256 "897df8317b20f09b708eb1c73df8bcde7b0df06343b3a2944c527c91ab308bf6"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/compass/releases/download/v1.4.0/compass_1.4.0_linux_amd64.tar.gz"
-      sha256 "32d0c8c65f1908989ab42408aa7bd85b9c8344fe002f2ca0f526b0bd98fd5d4d"
+      url "https://github.com/spacedock-dev/compass/releases/download/v2.0.0/compass_2.0.0_linux_amd64.tar.gz"
+      sha256 "1526a23730137174a7e28eb6b41010f26b0c5e389b3252c600145e57124587d6"
     end
   end
 
