@@ -1,28 +1,28 @@
 class SubspaceBeta < Formula
   desc "Native Subspace Review v1 TUI"
   homepage "https://github.com/spacedock-dev/subspace"
-  version "0.16.2"
+  version "0.16.4"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.2/subspace_0.16.2_darwin_arm64.tar.gz"
-      sha256 "1a98546de83fef51bad6d1f98e7018fd672dd93d6484afcf2de009a9417e4513"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.4/subspace_0.16.4_darwin_arm64.tar.gz"
+      sha256 "6c7fe4d565113e32ed62ecfc02d6921aade1045cd5e1a0392e5d357c50d3ea0a"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.2/subspace_0.16.2_darwin_amd64.tar.gz"
-      sha256 "eee55cd6423afe61931a51c6fbb2f10c8af3577ce0f1bc6618342a5a3877d355"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.4/subspace_0.16.4_darwin_amd64.tar.gz"
+      sha256 "7ee19dc3678a5664624fe8c42d788a9ce8e33bb11c787759cb2d7896a4011803"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.2/subspace_0.16.2_linux_arm64.tar.gz"
-      sha256 "61653d4f7e25c6324a4d9bacfb22a720d8cb5c19f17732123f52938010fd59de"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.4/subspace_0.16.4_linux_arm64.tar.gz"
+      sha256 "eadf9dd47302ebe6a7f01926365298ca1ffc42c87aac2515783aeb59d14dd224"
     end
     on_intel do
-      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.2/subspace_0.16.2_linux_amd64.tar.gz"
-      sha256 "421c86ce5be4f9dc4f439838aaf0f492536e5d6c659a139173807f92cb010728"
+      url "https://github.com/spacedock-dev/subspace/releases/download/v0.16.4/subspace_0.16.4_linux_amd64.tar.gz"
+      sha256 "81da66c6cbcaf7073d43fd6a2e7c1c0d8b3d9fbf87f6a794952569042cdb6841"
     end
   end
 
@@ -35,10 +35,10 @@ class SubspaceBeta < Formula
   end
 
   test do
-    assert_equal "0.16.2", shell_output("#{bin}/subspace-tui --version").strip
-    assert_equal "0.16.2", shell_output("#{bin}/sr --version").strip
-    assert_equal "0.16.2", shell_output("#{bin}/spacedock-review --version").strip
-    assert_equal "0.16.2", shell_output("#{bin}/subspace-relay-client --version").strip
-    assert_equal "0.16.2", shell_output("#{bin}/rr --version").strip
+    assert_equal "0.16.4", shell_output("#{bin}/subspace-tui --version").strip
+    assert_equal "0.16.4", shell_output("#{bin}/sr --version").strip
+    assert_equal "0.16.4", shell_output("#{bin}/spacedock-review --version").strip
+    assert_equal "0.16.4", shell_output("#{bin}/subspace-relay-client --version").strip
+    assert_equal "0.16.4", shell_output("#{bin}/rr --version").strip
   end
 end
