@@ -6,25 +6,25 @@ cask "spacedock@next" do
     end
   end
 
-  version "0.28.0-pre5"
+  version "0.29.0-pre0"
 
   on_macos do
     on_arm do
-      sha256 "0203ed62ffca88e6246bf6e29bf16c015f418c04cb9b6958a35d4bcef2bce482"
+      sha256 "4004130ddedb0de54dea316f88d505ba4462a123b4c2a1389e71e2e6ed42f62b"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_darwin_arm64_edge.tar.gz"
     end
     on_intel do
-      sha256 "ecc0a7cffaa147fe9123c147cf1483dc6f5eb72317c7aa90be5c203ceb6965b1"
+      sha256 "958c599ccc5e16331814991bb736766ffde421de92d2b7e1a6b85fa7d4637c60"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_darwin_amd64_edge.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "41d0896620320fda184666c78c51556ff07828a68a8c97b3959572290255a3b6"
+      sha256 "d2550e6c848516f32d04411689be27b0974acf29ed9936fc08c50f0f43a52ec4"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_linux_arm64_edge.tar.gz"
     end
     on_intel do
-      sha256 "5c77e8b59f1d89bcbbe90e4fcf4d6ee4a46e5010c843f56b0e922a9d56ac4223"
+      sha256 "7aed6be50e5278a87695c6274ab8723c2187343ac5b410587361a2a2b43f72ab"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_linux_amd64_edge.tar.gz"
     end
   end
@@ -50,9 +50,12 @@ cask "spacedock@next" do
 
   binary "spacedock"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
+    Add the agent plugins:
+      spacedock install --host claude   (or --host codex)
+
     Recommended companion (install separately):
       safehouse  — sandboxes agent runs (https://agent-safehouse.dev)
       brew install eugene1g/safehouse/agent-safehouse
