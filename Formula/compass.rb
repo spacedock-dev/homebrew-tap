@@ -7,22 +7,22 @@ class Compass < Formula
   on_macos do
     on_arm do
       url "https://github.com/spacedock-dev/compass/releases/download/v2.12.0/compass_2.12.0_darwin_arm64.tar.gz"
-      sha256 "ddfe3357fa734ea1c3585d265834fadae63218d9a8f0eaa227b872b0718cf337"
+      sha256 "ca87943e722fac1fcdc9278a8a0387a77e06fef912cdf967e8d51404471dd7ed"
     end
     on_intel do
       url "https://github.com/spacedock-dev/compass/releases/download/v2.12.0/compass_2.12.0_darwin_amd64.tar.gz"
-      sha256 "9ca5276d5837535731d210c1e2f908db1f19074dc2583918ce8b89592d8cf64a"
+      sha256 "7dcffb09edf14d27d46f91972601d7ae86767c4b17443be18d4cbf223c54168d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/spacedock-dev/compass/releases/download/v2.12.0/compass_2.12.0_linux_arm64.tar.gz"
-      sha256 "75defcb2afe6d79b01a65e285af2a6905b10039cfec345c104a8881db67fb383"
+      sha256 "1455c0055bd164fa74ec7ddbadfcbae84be9c1d5acd6be0104f9ad5fbce48468"
     end
     on_intel do
       url "https://github.com/spacedock-dev/compass/releases/download/v2.12.0/compass_2.12.0_linux_amd64.tar.gz"
-      sha256 "c91425c8f3fdc4bde721cc843c8ef59b0c682de0999da8d0993dd73ea3a62686"
+      sha256 "cf85d2357d99172331d377c090c68eac193b5c2f78ace779d6fb40e04feaba3f"
     end
   end
 
