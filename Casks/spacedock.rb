@@ -6,25 +6,25 @@ cask "spacedock" do
     end
   end
 
-  version "0.28.0"
+  version "0.28.1"
 
   on_macos do
     on_arm do
-      sha256 "bf78db6405fdbf23ed8846045929fef12ce2bc45beba1ca65b39ddd80d4c23ad"
+      sha256 "b9c03ab8090a24b3614d646430ca2d2382ee0a0f3a5366fed80a9909a5eb34dd"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "aaf05f14564ef8734aff50a72591a4b4cb3d452ab3af93aeabaa75adad12d8db"
+      sha256 "fe1487c39d8b28e1bf5a6a9ad0d4f93ec2532bf77a78bae8ed2f721604e26bfa"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "fe66967bf51df5b5afc4bb268f4163b38575ba5000c6ab9c57bf9b907b5f38b4"
+      sha256 "e2262ba820718a3ff2cbbde5b4153223d1d43ee500b31c918589083ca97d04a6"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1345b0c1b15fa0899d155516f6f2bb4fd399a0b86e3cc50b4baa4bcb4713f20c"
+      sha256 "720987a6d5a77d658167f0069071c989e1120c9e835c8b5ee3af7a0b3d310377"
       url "https://github.com/spacedock-dev/spacedock/releases/download/v#{version}/spacedock_#{version}_linux_amd64.tar.gz"
     end
   end
